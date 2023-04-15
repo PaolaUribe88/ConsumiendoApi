@@ -2,7 +2,7 @@ const consultaComida =() =>{
      // extraer el nombre proporcionado
      let nombreParaConsultar = document.getElementById('nombreProporcionado').value;
     // configuramos el endpoint a consultar concatenando el endpoint original con el nombre proporcionado
-    let endpoint = 'https://www.themealdb.com/api/json/v1/1/search.php?s=Chicken Couscous'+nombreParaConsultar;
+    let endpoint = 'https://www.themealdb.com/api/json/v1/1/search.php?s='+nombreParaConsultar;
     fetch(endpoint)
     .then(respuestaComida => respuestaComida.json())
     .then (datoPlato =>{
@@ -25,7 +25,7 @@ const consultaComida =() =>{
         etiquetaArea.innerHTML = areaRecuperada;
 
         let etiquetaImagen = document.getElementById('imagenComida');
-        etiquetaImagen.innerHTML = imagenRecuperada;
+        etiquetaImagen.src = imagenRecuperada;
 
         let etiquetaReceta = document.getElementById('recetaComida');
         etiquetaReceta.innerHTML = recetaRecuperada;
