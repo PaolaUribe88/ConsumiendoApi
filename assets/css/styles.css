@@ -1,0 +1,54 @@
+nav{
+    background-color: coral;
+    background-repeat: repeat-x;
+    display: inline-block;
+}
+body{
+    background-image: linear-gradient(90deg, #d5f4f5 0%, #4d5336 100%);
+}
+#divContainer{
+    margin-top: 5%;
+    align-self: center;
+}
+#nombreComida{
+    text-align: center;
+    background-color: rgb(60, 87, 45);
+    color: rgb(6, 242, 18);
+    font-size: 25px;
+    
+}
+#categoriaComida{
+    text-align: center;
+    background-color: rgb(60, 87, 45);
+    color: rgb(64, 0, 255);
+    font-size: 25px;
+}
+#areaComida{
+    text-align: center;
+    background-color: rgb(60, 87, 45);
+    color: rgb(242, 241, 244);
+    font-size: 25px;
+}
+#recetaComida{
+    text-align: center;
+    background-color: rgb(60, 87, 45);
+    color: rgb(242, 241, 244);
+    font-size: 25px;
+}
+#mi_footer{/*estilos de id #*/
+  
+    
+    font-size: 70%;
+    color: rgb(12, 0, 0);
+    text-align: center;/*alineacion del texto*/  
+}
+#imgFooter{
+      background-image: url(../img/logo-tcdb.png);
+      background-repeat: no-repeat;
+      align-content: space-between;
+}
+.organizacion_footer{
+    display: inline-block;
+    width: 300px;
+    height: 80px;
+}
